@@ -4,7 +4,9 @@ namespace App\Entity;
 
 use App\Repository\PokemonRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
 
+#[ApiResource]
 #[ORM\Entity(repositoryClass: PokemonRepository::class)]
 class Pokemon
 {
